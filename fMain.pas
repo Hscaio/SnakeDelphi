@@ -10,12 +10,13 @@ uses
 type
   TfrmMain = class(TForm)
     DrawGrid1: TDrawGrid;
-    lbScore: TLabel;
+    Panel1: TPanel;
     btnStart: TButton;
-    spSpeed: TSpinEdit;
     Label1: TLabel;
-    spSize: TSpinEdit;
     Label2: TLabel;
+    lbScore: TLabel;
+    spSize: TSpinEdit;
+    spSpeed: TSpinEdit;
     procedure FormCreate(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure btnStartClick(Sender: TObject);
