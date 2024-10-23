@@ -5,6 +5,7 @@ interface
 uses System.Generics.Collections,
      System.SysUtils,
      System.Threading,
+     System.Classes,
 
      Snake.Enums,
      Snake.Classes;
@@ -68,7 +69,7 @@ type
      function GetSpeed: Integer;
     procedure SetSpeed(const Value: Integer);
 
-     function GerateScore : Boolean;
+    procedure GerateScore;
      function MoveSnake : Boolean;
 
     procedure StartGame;
@@ -151,7 +152,7 @@ begin
       Result[FScore.X][FScore.Y] := cvScore;
 end;
 
-function TSnakeGame.GerateScore: Boolean;
+procedure TSnakeGame.GerateScore;
 var LNewX, LNewY : Integer;
 begin
    repeat
